@@ -37,9 +37,8 @@ public class Dizionario {
 		String s = "";
 		if(ali.contains("?")) {
 			int indice = ali.indexOf('?');
-			String[] divisa = ali.split("?");
-			String prima = divisa[0];
-			String dopo = divisa[1];
+			String prima = ali.substring(0, indice);;
+			String dopo = ali.substring(indice+1);
 			String primaLista;
 			String dopoLista;
 			for(ParolaPiu pi : lista) {
